@@ -17,6 +17,9 @@
 
     - name: build docker image using the Dockerfile
       command: docker build -t snourane/comingsoon-page .
+    - name: Login to DockerHub
+      command: docker login -u snourane  -p Noura171095
+ 
   
 
     - name: Push Image to dockerhub
