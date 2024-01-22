@@ -16,7 +16,7 @@
       ignore_errors: yes
 
     - name: build docker image using the Dockerfile
-      command: docker build -t triple3a/comingsoon-page .
+      command: docker build -t nouraneselim2/comingsoon-page .
 
     - name: Push Image to dockerhub
       command: docker push nouraneselim2/comingsoon-page
