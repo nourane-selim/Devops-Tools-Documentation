@@ -26,7 +26,8 @@
                 script{
                   sh """
                   cd Kubernetes/comingsoon/k8s
-		  kubectl config set-context minikube --cluster=minikube --user=minikube
+		  pwd
+                  whoami
 		  kubectl config use-context minikube
 		  cat ~/.kube/config
                   kubectl  apply -f deployment.yaml
