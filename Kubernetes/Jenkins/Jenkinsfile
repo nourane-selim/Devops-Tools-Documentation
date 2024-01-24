@@ -25,7 +25,7 @@
               // You will need to install CloudBees AWS Credentials Plugin in Jenkins and add AWS Credentials first 
                 
                   sh """
-                  cd Kubernetes/comingsoon/
+                  cd Kubernetes/comingsoon/k8s
                   kubectl  apply -f deployment.yaml
                   kubectl  apply -f services.yaml
                   """
