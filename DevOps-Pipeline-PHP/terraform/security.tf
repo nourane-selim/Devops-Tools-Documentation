@@ -54,7 +54,7 @@ resource "tls_private_key" "pk" {
   algorithm = "RSA"
   rsa_bits  = 4096
 }
-
+/*
 # Create and download the keypair 
 resource "aws_key_pair" "UbuntuKP" {
   key_name = "mykey"
@@ -64,3 +64,4 @@ resource "aws_key_pair" "UbuntuKP" {
     command = "echo '${tls_private_key.pk.private_key_pem}' > ./mykey.pem && chmod 400 mykey.pem"
   }
 }
+*/
