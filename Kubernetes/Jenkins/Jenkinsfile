@@ -26,6 +26,7 @@
                 
                   sh """
                   cd Kubernetes/comingsoon/k8s
+		  cat ~/.kube/config
                   kubectl  apply -f deployment.yaml
                   kubectl  apply -f services.yaml
                   """
