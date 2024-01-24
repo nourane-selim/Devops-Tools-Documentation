@@ -7,7 +7,7 @@ variable "region" {
 # Adding the ami as a variable, used in main.tf 
 variable "ami" {
   type    = string 
-  default = "ami-0d527b8c289b4af7f"
+  default =  "ami-06aa3f7caf3a30282"
 }
 
 # Create terraform.tfvars and add your public ssh key in 
