@@ -23,7 +23,7 @@
         stage('Deploy') {
             steps {
               // You will need to install CloudBees AWS Credentials Plugin in Jenkins and add AWS Credentials first 
-                
+                script{
                   sh """
                   cd Kubernetes/comingsoon/k8s
 		  kubectl config use-context minikube
@@ -31,7 +31,7 @@
                   kubectl  apply -f deployment.yaml
                   kubectl  apply -f services.yaml
                   """
-                }
+                }}
         
 
  }}}
